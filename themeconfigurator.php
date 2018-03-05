@@ -147,10 +147,7 @@ class ThemeConfigurator extends Module
 					`image_h` VARCHAR(10),
 					`html` TEXT,
 					`active` tinyint(1) unsigned NOT NULL DEFAULT \'1\',
-<<<<<<< HEAD
 					`columns` TINYINT(1) UNSIGNED NOT NULL DEFAULT \'1\',
-=======
->>>>>>> 3f54c335b6e68bb8fca5ad6b28d5c734cda761eb
 					PRIMARY KEY (`id_item`)
 			) ENGINE = '._MYSQL_ENGINE_.' DEFAULT CHARSET=UTF8;')
 		);
