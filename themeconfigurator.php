@@ -147,7 +147,10 @@ class ThemeConfigurator extends Module
 					`image_h` VARCHAR(10),
 					`html` TEXT,
 					`active` tinyint(1) unsigned NOT NULL DEFAULT \'1\',
+<<<<<<< HEAD
 					`columns` TINYINT(1) UNSIGNED NOT NULL DEFAULT \'1\',
+=======
+>>>>>>> 3f54c335b6e68bb8fca5ad6b28d5c734cda761eb
 					PRIMARY KEY (`id_item`)
 			) ENGINE = '._MYSQL_ENGINE_.' DEFAULT CHARSET=UTF8;')
 		);
@@ -419,7 +422,9 @@ class ThemeConfigurator extends Module
 		$id_item = (int)Tools::getValue('item_id');
 		$title = Tools::getValue('item_title');
 		$content = Tools::getValue('item_html');
+
         $columns = (int)Tools::getValue('item_columns');
+
 
 		if (!Validate::isCleanHtml($title, (int)Configuration::get('PS_ALLOW_HTML_IFRAME')) || !Validate::isCleanHtml($content, (int)Configuration::get('PS_ALLOW_HTML_IFRAME')))
 		{
